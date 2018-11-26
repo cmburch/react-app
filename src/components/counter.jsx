@@ -20,6 +20,8 @@ class Counter extends Component {
     render() { 
         return ( 
             <React.Fragment>
+                {/* compare a boolen && string the string will display if first condition is true */}
+                {this.state.tags.length === 0 && "" }
                 {this.renderTags()}
             </React.Fragment>
         );
