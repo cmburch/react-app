@@ -7,11 +7,12 @@ class Counter extends Component {
      };
 
      handleIncrement = () => {
-         console.log('Increment Clicked')
+         console.log('Increment Clicked',this)
+         this.setState({value: this.state.value + 1})
      }
 
     render() { 
-
+        
         const { tags } = this.state;
         return ( 
             <React.Fragment>
