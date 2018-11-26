@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class Counter extends Component {
     state = { 
         value: 0,
@@ -15,15 +16,15 @@ class Counter extends Component {
         
         const { tags } = this.state;
         return ( 
-            <React.Fragment>
+            <div>
                 <span className={this.getBadgeClasses()} >{this.formatCount()}</span>
                 <button onClick={this.handleIncrement} className="btn btn-secondary btn-sm">Increment</button>
-                <ul>
+                {/* <ul>
                     {tags.map(tag =>
                         <li key={tag}>{tag}</li>
                     )}
-                </ul>
-            </React.Fragment>
+                </ul> */}
+            </div>
         );
     }
     getBadgeClasses() {
